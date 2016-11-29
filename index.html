@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/global.css"/>
   </head>
   <body ng-app = "app">
-    <main ng-controllet = "appController">
+    <main ng-controller = "appController">
 
       <script src="js/angular.min.js"></script>
       <script src="js/app.js"></script>
@@ -32,7 +32,7 @@
 
         </div>
       </header>
-      <section class="" data-name="Paris">
+      <section class="" data-name="Paris" ng-repeat= "city in cities">
       	<div class="wrapper">
       		<div class="paris">
       			<h1>Paris</h1>
@@ -48,6 +48,7 @@
       		</footer>
       	</div>
       </section>
+
       <section class="" data-name="Londres">
       	<div class="wrapper">
       		<div class="londres">
@@ -165,6 +166,8 @@
     <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/d7ff15a8c7.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
 
     </script>
   </body>
