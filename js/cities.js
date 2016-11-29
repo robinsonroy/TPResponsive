@@ -60,7 +60,7 @@ var cities = [
     show : true
 },
 {
-    name: 'Athènes',
+    name: 'Athenes',
     datemin: '05',
     daymin: '2016-12-05',
     datemax : '09 décembre',

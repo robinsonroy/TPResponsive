@@ -6,24 +6,26 @@ app.controller('appController', function($scope){
 
   $scope.search = function(searchValue){
     var cityShown = [];
-    for (var city in this.cities)
+
+    if(this.searchValue != '')
     {
-      if(this.searchValue != '')
+      for (var city in this.cities)
       {
         if (city.name == this.searchValue)
         {
-          cityShown = city;
+          cityShown.push(city);
         }
         else {
 
         }
       }
-      else{
-        cityShown=cities;
+    }
+    else{
+      cityShown=cities;
       }
 
       console.log("city : "+ cityShown);
-    }
+
     return cityShown;
   }
 
