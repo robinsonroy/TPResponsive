@@ -2,6 +2,8 @@
 $medium: 768px;
 $small: 480;
 
+$red:#e74c3c;
+
 header {
   background-color: #4990e2;
   @media screen and (max-width: $medium) {
@@ -17,5 +19,33 @@ header {
   // .dropdown, .search{
   //   float: right
   // }
+  }
+  .filter{
+    background-color: #4481c9;
+    margin: 30px 0 30px 0;
+    padding-left: 30px;
+  }
 }
+
+.heart{
+  color: $red;
+}
+
+section {.wrapper{
+  margin: 15px;
+  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.4);
+  :first-child{
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  h1{
+    color: white;
+    margin: 0;
+  }}
+  footer{
+    padding: 10px
+  }
+
 }
