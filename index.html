@@ -34,16 +34,18 @@
           </div>
         </header>
       </header>
-      <section class="" data-name="Paris" ng-repeat= "city in cities">
+
+
+      <section class="" data-name="{{city.name}}" ng-repeat= "city in cities">
       	<div class="wrapper">
-      		<div class="paris">
-      			<h1>Paris</h1>
+      		<div class="{{city.name | lowercase}}">
+      			<h1>{{city.name}}</h1>
       		</div>
       		<footer class="bottom">
-      			<time datetime="2016-12-01">01</time> - <time datetime="2016-12-04">04 décembre</time>
+      			<time datetime="{{city.daymin}}">{{city.datemin}}</time> - <time datetime="{{city.daymax}}">{{city.datemax}}</time>
             <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-            <p>3 nuits - 55€ la nuit</p>
-      			<p class="total">165€</p>
+            <p>{{city.description}}</p>
+      			<p class="total">{{city.price}}€</p>
       			<div class="hearth">
       				<!-- icon -->
       			</div>
@@ -51,118 +53,7 @@
       	</div>
       </section>
 
-      <section class="" data-name="Londres">
-      	<div class="wrapper">
-      		<div class="londres">
-      			<h1>Londres</h1>
-      		</div>
-      		<footer class="bottom">
-      			<time datetime="2016-12-13">13</time> - <time datetime="2016-12-18">18 décembre</time>
-            <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-            <p>5 nuits - 40€ la nuit</p>
-      			<p class="total">200€</p>
-      			<div class="hearth">
-      				<!-- icon -->
-      			</div>
-      		</footer>
-      	</div>
-      </section>
-      <section class="" data-name="Madrid">
-      	<div class="wrapper">
-      		<div class="madrid">
-      			<h1>Madrid</h1>
-      		</div>
-      		<footer class="bottom">
-      			<time datetime="2016-12-02">02</time> - <time datetime="2016-12-10">10 décembre</time>
-            <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-            <p>8 nuits - 47€ la nuit</p>
-      			<p class="total">376€</p>
-      			<div class="hearth">
-      				<!-- icon -->
-      			</div>
-      		</footer>
-      	</div>
-      </section>
-      <section class="" data-name="Rome">
-      	<div class="wrapper">
-      		<div class="rome">
-      			<h1>Rome</h1>
-      		</div>
-      		<footer class="bottom">
-      			<time datetime="2016-12-08">08</time> - <time datetime="2016-12-10">10 décembre</time>
-            <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-            <p>2 nuits - 52€ la nuit</p>
-      			<p class="total">104€</p>
-      			<div class="hearth">
-      				<!-- icon -->
-      			</div>
-      		</footer>
-      	</div>
-      </section>
-      <section class="" data-name="Lisbonne">
-      	<div class="wrapper">
-      		<div class="lisbonne">
-      			<h1>Lisbonne</h1>
-      		</div>
-      		<footer class="bottom">
-      			<time datetime="2016-12-01">01</time> - <time datetime="2016-12-09">09 décembre</time>
-            <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-            <p>8 nuits - 34€ la nuit</p>
-      			<p class="total">272€</p>
-      			<div class="hearth">
-      				<!-- icon -->
-      			</div>
-      		</footer>
-      	</div>
-      </section>
-      <section class="" data-name="Berlin">
-      	<div class="wrapper">
-      		<div class="berlin">
-      			<h1>Berlin</h1>
-      		</div>
-      		<footer class="bottom">
-      			<time datetime="2016-12-03">03</time> - <time datetime="2016-12-10">10 décembre</time>
-            <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-            <p>7 nuits - 41€ la nuit</p>
-      			<p class="total">287€</p>
-      			<div class="hearth">
-      				<!-- icon -->
-      			</div>
-      		</footer>
-      	</div>
-      </section>
-      <section class="" data-name="Athenes">
-      	<div class="wrapper">
-      		<div class="athenes">
-      			<h1>Athènes</h1>
-      		</div>
-      		<footer class="bottom">
-      			<time datetime="2016-12-05">05</time> - <time datetime="2016-12-09">09 décembre</time>
-            <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-            <p>4 nuits - 40€ la nuit</p>
-      			<p class="total">160€</p>
-      			<div class="hearth">
-      				<!-- icon -->
-      			</div>
-      		</footer>
-      	</div>
-      </section>
-      <section class="" data-name="Prague">
-      	<div class="wrapper">
-      		<div class="prague">
-      			<h1>Prague</h1>
-      		</div>
-      		<footer class="bottom">
-      			<time datetime="2016-12-12">12</time> - <time datetime="2016-12-17">17 décembre</time>
-            <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-            <p>5 nuits - 60€ la nuit</p>
-      			<p class="total">300€</p>
-      			<div class="hearth">
-      				<!-- icon -->
-      			</div>
-      		</footer>
-      	</div>
-      </section>
+
     </main>
 
     <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
@@ -170,6 +61,7 @@
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.2/angular.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/cities.js"></script>
 
     </script>
   </body>
