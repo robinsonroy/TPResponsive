@@ -1,2 +1,21 @@
-h1{
+// Variable
+$medium: 768px;
+$small: 480;
+
+header {
+  background-color: #4990e2;
+  @media screen and (max-width: $medium) {
+    text-align: center;
+    input.search{
+      display: none;
+    }
+  }
+  @media screen and (min-width: $medium) {
+  // h1{
+  //   float: left;
+  // }
+  // .dropdown, .search{
+  //   float: right
+  // }
+}
 }
