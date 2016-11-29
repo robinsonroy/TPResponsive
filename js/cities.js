@@ -6,7 +6,8 @@ var cities = [
     datemax : '04 décembre',
     daymax : '2016-12-04',
     description: '3 nuits - 55€ la nuit',
-    price: 165
+    price: 165,
+    show : true
 },
 {
     name: 'Londres',
@@ -15,7 +16,8 @@ var cities = [
     datemax : '18 décembre',
     daymax : '2016-12-18',
     description: '5 nuits - 40€ la nuit',
-    price: 200
+    price: 200,
+    show : true
 },
 {
     name: 'Madrid',
@@ -24,7 +26,8 @@ var cities = [
     datemax : '10 décembre',
     daymax : '2016-12-10',
     description: '8 nuits - 47€ la nuit',
-    price: 376
+    price: 376,
+    show : true
 },
 {
     name: 'Rome',
@@ -33,7 +36,8 @@ var cities = [
     datemax : '10 décembre',
     daymax : '2016-12-10',
     description: '2 nuits - 52€ la nuit',
-    price: 104
+    price: 104,
+    show : true
 },
 {
     name: 'Lisbonne',
@@ -42,7 +46,8 @@ var cities = [
     datemax : '09 décembre',
     daymax : '2016-12-09',
     description: '8 nuits - 34€ la nuit',
-    price: 287
+    price: 287,
+    show : true
 },
 {
     name: 'Berlin',
@@ -51,7 +56,8 @@ var cities = [
     datemax : '10 décembre',
     daymax : '2016-12-10',
     description: '7 nuits - 41€ la nuit',
-    price: 287
+    price: 287,
+    show : true
 },
 {
     name: 'Athènes',
@@ -60,7 +66,9 @@ var cities = [
     datemax : '09 décembre',
     daymax : '2016-12-09',
     description: '4 nuits - 40€ la nuit',
-    price: 160
+    price: 160,
+    show : true
+
 },
 {
     name: 'Prague',
@@ -69,6 +77,7 @@ var cities = [
     datemax : '17 décembre',
     daymax : '2016-12-17',
     description: '5 nuits - 60€ la nuit',
-    price: 300
+    price: 300,
+    show : true
 },
 ];

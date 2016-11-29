@@ -25,7 +25,7 @@
               <li><a href="#">Londre</a></li>
             </ul>
           </div>
-          <input type="text" name="search" placeholder="Recherche" value="">
+          <input type="text" name="search" placeholder="Recherche" value="" ng-model="searchValue">
           <div class="filter">
             <label for="price">Price:</label>
             <input type="range" name="price" id="price" value="200" min="100" max="400">
@@ -36,7 +36,7 @@
       </header>
 
 
-      <section class="" data-name="{{city.name}}" ng-repeat= "city in cities">
+      <section class="" data-name="{{city.name}}" ng-repeat= "city in search(searchValue)">
       	<div class="wrapper">
       		<div class="{{city.name | lowercase}}">
       			<h1>{{city.name}}</h1>
