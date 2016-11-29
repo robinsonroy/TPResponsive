@@ -13,7 +13,22 @@
     <script src="js/angular.min.js"></script>
     <script src="js/app.js"></script>
     <header>
-        <input type="text" name="search" placeholder="Recherche" value="">
+      <h1>Escapade en Europe</h1>
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Mes favoris
+          <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <li><a href="#">Paris</a></li>
+          <li><a href="#">Londre</a></li>
+        </ul>
+      </div>
+      <input type="text" name="search" placeholder="Recherche" value="">
+      <div class="filter">
+        
+      </div>
     </header>
     <section class="" data-name="Paris">
     	<div class="wrapper">
@@ -22,7 +37,8 @@
     		</div>
     		<footer class="bottom">
     			<time datetime="2016-12-01">01</time> - <time datetime="2016-12-04">04 décembre</time>
-    			<p>3 nuits - 55€ la nuit</p>
+          <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+          <p>3 nuits - 55€ la nuit</p>
     			<p class="total">165€</p>
     			<div class="hearth">
     				<!-- icon -->
@@ -37,7 +53,8 @@
     		</div>
     		<footer class="bottom">
     			<time datetime="2016-12-13">13</time> - <time datetime="2016-12-18">18 décembre</time>
-    			<p>5 nuits - 40€ la nuit</p>
+          <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+          <p>5 nuits - 40€ la nuit</p>
     			<p class="total">200€</p>
     			<div class="hearth">
     				<!-- icon -->
@@ -52,7 +69,8 @@
     		</div>
     		<footer class="bottom">
     			<time datetime="2016-12-02">02</time> - <time datetime="2016-12-10">10 décembre</time>
-    			<p>8 nuits - 47€ la nuit</p>
+          <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+          <p>8 nuits - 47€ la nuit</p>
     			<p class="total">376€</p>
     			<div class="hearth">
     				<!-- icon -->
@@ -67,7 +85,8 @@
     		</div>
     		<footer class="bottom">
     			<time datetime="2016-12-08">08</time> - <time datetime="2016-12-10">10 décembre</time>
-    			<p>2 nuits - 52€ la nuit</p>
+          <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+          <p>2 nuits - 52€ la nuit</p>
     			<p class="total">104€</p>
     			<div class="hearth">
     				<!-- icon -->
@@ -82,7 +101,8 @@
     		</div>
     		<footer class="bottom">
     			<time datetime="2016-12-01">01</time> - <time datetime="2016-12-09">09 décembre</time>
-    			<p>8 nuits - 34€ la nuit</p>
+          <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+          <p>8 nuits - 34€ la nuit</p>
     			<p class="total">272€</p>
     			<div class="hearth">
     				<!-- icon -->
@@ -97,7 +117,8 @@
     		</div>
     		<footer class="bottom">
     			<time datetime="2016-12-03">03</time> - <time datetime="2016-12-10">10 décembre</time>
-    			<p>7 nuits - 41€ la nuit</p>
+          <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+          <p>7 nuits - 41€ la nuit</p>
     			<p class="total">287€</p>
     			<div class="hearth">
     				<!-- icon -->
@@ -112,7 +133,8 @@
     		</div>
     		<footer class="bottom">
     			<time datetime="2016-12-05">05</time> - <time datetime="2016-12-09">09 décembre</time>
-    			<p>4 nuits - 40€ la nuit</p>
+          <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+          <p>4 nuits - 40€ la nuit</p>
     			<p class="total">160€</p>
     			<div class="hearth">
     				<!-- icon -->
@@ -127,7 +149,8 @@
     		</div>
     		<footer class="bottom">
     			<time datetime="2016-12-12">12</time> - <time datetime="2016-12-17">17 décembre</time>
-    			<p>5 nuits - 60€ la nuit</p>
+          <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+          <p>5 nuits - 60€ la nuit</p>
     			<p class="total">300€</p>
     			<div class="hearth">
     				<!-- icon -->
@@ -136,6 +159,10 @@
     	</div>
     </section>
 
+    <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/d7ff15a8c7.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+
+    </script>
   </body>
 </html>
