@@ -2,7 +2,7 @@ var app = angular.module('app',[]);
 app.controller('appController', function($scope){
   $scope.cities = cities;
 
-  $scope.searchValue = 'Paris';
+  $scope.searchValue = '';
 
   $scope.search = function(searchValue){
     var cityShown = [];
